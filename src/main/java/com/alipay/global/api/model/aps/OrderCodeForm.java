@@ -1,6 +1,5 @@
 package com.alipay.global.api.model.aps;
 
-import com.alipay.global.api.model.ams.CodeDetail;
 
 import java.util.List;
 
