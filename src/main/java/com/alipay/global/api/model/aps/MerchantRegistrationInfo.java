@@ -10,6 +10,7 @@ public class MerchantRegistrationInfo {
     private List<Website> websites;
     private Address merchantAddress;
     private RegistrationDetail registrationDetail;
+    private String shareholderName;
     private String shareholderId;
     private String representativeName;
     private String representativeId;
@@ -101,6 +102,15 @@ public class MerchantRegistrationInfo {
 
     public MerchantRegistrationInfo setRepresentativeId(String representativeId) {
         this.representativeId = representativeId;
+        return this;
+    }
+
+    public String getShareholderName() {
+        return shareholderName;
+    }
+
+    public MerchantRegistrationInfo setShareholderName(String shareholderName) {
+        this.shareholderName = shareholderName;
         return this;
     }
 }
