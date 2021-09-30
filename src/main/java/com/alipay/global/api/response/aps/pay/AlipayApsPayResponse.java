@@ -15,6 +15,9 @@ public class AlipayApsPayResponse extends AlipayResponse {
     private String        customerId;
     private String        pspId;
     private String        walletBrandName;
+    private String        schemeUrl;
+    private String        applinkUrl;
+    private String        normalUrl;
 
     public String getAcquirerId() {
         return acquirerId;
@@ -86,5 +89,29 @@ public class AlipayApsPayResponse extends AlipayResponse {
 
     public void setWalletBrandName(String walletBrandName) {
         this.walletBrandName = walletBrandName;
+    }
+
+    public String getSchemeUrl() {
+        return schemeUrl;
+    }
+
+    public void setSchemeUrl(String schemeUrl) {
+        this.schemeUrl = schemeUrl;
+    }
+
+    public String getApplinkUrl() {
+        return applinkUrl;
+    }
+
+    public void setApplinkUrl(String applinkUrl) {
+        this.applinkUrl = applinkUrl;
+    }
+
+    public String getNormalUrl() {
+        return normalUrl;
+    }
+
+    public void setNormalUrl(String normalUrl) {
+        this.normalUrl = normalUrl;
     }
 }
