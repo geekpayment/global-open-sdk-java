@@ -19,6 +19,7 @@ public class AlipayApsNotifyPaymentRequest extends AlipayRequest<AlipayApsNotify
     private String walletBrandName;
     private Amount settlementAmount;
     private Quote  settlementQuote;
+    private Amount customsDeclarationAmount;
 
     public String getAcquirerId() {
         return acquirerId;
@@ -106,6 +107,15 @@ public class AlipayApsNotifyPaymentRequest extends AlipayRequest<AlipayApsNotify
 
     public void setSettlementQuote(Quote settlementQuote) {
         this.settlementQuote = settlementQuote;
+    }
+
+    public Amount getCustomsDeclarationAmount() {
+        return customsDeclarationAmount;
+    }
+
+    public AlipayApsNotifyPaymentRequest setCustomsDeclarationAmount(Amount customsDeclarationAmount) {
+        this.customsDeclarationAmount = customsDeclarationAmount;
+        return this;
     }
 
     @Override

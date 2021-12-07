@@ -22,6 +22,7 @@ public class AlipayApsInquiryPaymentResponse extends AlipayResponse {
     private List<Transaction> transactions;
     private Amount settlementAmount;
     private Quote  settlementQuote;
+    private Amount customsDeclarationAmount;
 
     public Result getPaymentResult() {
         return paymentResult;
@@ -117,5 +118,14 @@ public class AlipayApsInquiryPaymentResponse extends AlipayResponse {
 
     public void setSettlementQuote(Quote settlementQuote) {
         this.settlementQuote = settlementQuote;
+    }
+
+    public Amount getCustomsDeclarationAmount() {
+        return customsDeclarationAmount;
+    }
+
+    public AlipayApsInquiryPaymentResponse setCustomsDeclarationAmount(Amount customsDeclarationAmount) {
+        this.customsDeclarationAmount = customsDeclarationAmount;
+        return this;
     }
 }
