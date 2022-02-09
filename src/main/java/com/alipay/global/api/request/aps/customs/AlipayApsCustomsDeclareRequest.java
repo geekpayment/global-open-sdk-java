@@ -13,7 +13,7 @@ public class AlipayApsCustomsDeclareRequest extends AlipayRequest<AlipayApsCusto
     private CustomsInfo customs;
     private MerchantCustomsInfo merchantCustomsInfo;
     private Amount declarationAmount;
-    private boolean isSplit;
+    private Boolean isSplit;
     private String referenceOrderId;
     private BuyerCertificate buyerCertificate;
 
@@ -62,12 +62,12 @@ public class AlipayApsCustomsDeclareRequest extends AlipayRequest<AlipayApsCusto
         return this;
     }
 
-    public boolean isSplit() {
+    public Boolean getIsSplit() {
         return isSplit;
     }
 
-    public AlipayApsCustomsDeclareRequest setSplit(boolean split) {
-        isSplit = split;
+    public AlipayApsCustomsDeclareRequest setIsSplit(Boolean isSplit) {
+        this.isSplit = isSplit;
         return this;
     }
 

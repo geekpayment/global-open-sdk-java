@@ -7,7 +7,7 @@ public class DeclarationRecord {
     private CustomsInfo customs;
     private MerchantCustomsInfo merchantCustomsInfo;
     private Amount declarationAmount;
-    private boolean isSplit;
+    private Boolean isSplit;
     private String referenceOrderId;
     private String modifiedTime;
     private String customsResultCode;
@@ -69,12 +69,12 @@ public class DeclarationRecord {
         return this;
     }
 
-    public boolean isSplit() {
+    public Boolean getIsSplit() {
         return isSplit;
     }
 
-    public DeclarationRecord setSplit(boolean split) {
-        isSplit = split;
+    public DeclarationRecord setIsSplit(Boolean isSplit) {
+        this.isSplit = isSplit;
         return this;
     }
 
