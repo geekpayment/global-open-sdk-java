@@ -18,6 +18,7 @@ public class AlipayApsPayResponse extends AlipayResponse {
     private String        schemeUrl;
     private String        applinkUrl;
     private String        normalUrl;
+    private String        paymentData;
 
     public String getAcquirerId() {
         return acquirerId;
@@ -113,5 +114,14 @@ public class AlipayApsPayResponse extends AlipayResponse {
 
     public void setNormalUrl(String normalUrl) {
         this.normalUrl = normalUrl;
+    }
+
+    public String getPaymentData() {
+        return paymentData;
+    }
+
+    public AlipayApsPayResponse setPaymentData(String paymentData) {
+        this.paymentData = paymentData;
+        return this;
     }
 }

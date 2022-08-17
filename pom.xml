@@ -4,7 +4,7 @@
     <groupId>com.globalfreepay.support.alipay</groupId>
     <artifactId>alipay-global-open-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>2.0.3</version>
+    <version>2.0.4</version>
     <name>global-open-sdk-java</name>
     <url>https://github.com/alipay/global-open-sdk-java</url>
     <description>
@@ -51,12 +51,12 @@
         <repository>
             <id>yix_aliyun_nexus</id>
             <name>aliyun_nexus</name>
-            <url>http://nexus.royalpay.com.au/content/repositories/cn.yixblog</url>
+            <url>https://nexus.royalpay.com.au/content/repositories/cn.yixblog</url>
         </repository>
         <snapshotRepository>
             <id>yix_aliyun_nexus</id>
             <name>aliyun nexus</name>
-            <url>http:///nexus.royalpay.com.au/content/repositories/snapshots</url>
+            <url>https:///nexus.royalpay.com.au/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -64,17 +64,17 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.9</version>
+            <version>3.12.0</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.76</version>
+            <version>1.2.83</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.32</version>
+            <version>1.7.36</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
